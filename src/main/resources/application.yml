@@ -1,0 +1,21 @@
+server:
+  port: 6669
+spring:
+  application:
+    name: rabbitmq
+  redis:
+    host: localhost
+    port: 6379
+  rabbitmq:
+    host: www.iamcrawler.cn
+    port: 5672
+    username: liuliang
+    password: liuliang
+    publisher-confirms: true
+    virtual-host: /
+    addresses: www.iamcrawler.cn:5672
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6660/eureka/
